@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'CursedTimerUlil';
+  src: url('../fonts/CursedTimerUlil-Aznm.ttf')  format('truetype');
+}
+
+body {
+    margin: 0;
+    background-color: #1B244A;
+    color: #FFFFFF;
+    font-family: 'Verdana', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    text-align: center;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 575px;
+    margin: 0 auto;
+    padding: 68px 82px;
+}
+
+.home, 
+.guest {
+    max-width: 155px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home__title, 
+.guest__title {
+    margin-bottom: 21px;
+}
+
+.home__count,
+.guest__count {
+    background-color: #000000;
+    align-self: stretch;
+    border-radius: 5px;
+    font-family: CursedTimerUlil;
+    color: #F94F6D;
+    font-size: 90px;
+    line-height: 127px;
+    padding-top: 15px;
+    margin-bottom: 26px;   
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    width: 45px;
+    height: 45px;
+    font-family: CursedTimerUlil;
+    font-size: 18px;
+    line-height: 28px;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    color: #9AABD8;
+    background-color: transparent
+}
+
+.button-clear {
+    background-color: #F94F6D;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/* <div class="container">
+    <div class="home">
+        <h3 class="home__title">HOME</h3>
+        <div class="home__count">0</div>
+        <div class="buttons-container">
+            <button class="button" onclick={addOnePointHome()}>+1</button>
+            <button class="button" onclick={addTwoPointsHome()}>+2</button>
+            <button class="button" onclick={addThreePointsHome()}>+3</button>
+        </div>
+    </div>
+    <div class="guest">
+        <h3>GUEST</h3>
+        <div class="guest__count">0</div>
+        <div class="buttons-container">
+            <button class="button" onclick={addOnePointGuest()}>+1</button>
+            <button class="button" onclick={addTwoPointsGuest()}>+2</button>
+            <button class="button" onclick={addThreePointsGuest()}>+3</button>
+        </div>
+    </div>
+</div> */
